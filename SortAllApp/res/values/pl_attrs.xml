@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <!-- 导航页签 SlidingTab -->
+    <declare-styleable name="SlidingTab">
+        <attr name="indicatorColor" format="color" />
+        <attr name="underlineColor" format="color" />
+        <attr name="dividerColor" format="color" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="dividerPadding" format="dimension" />
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="scrollOffset" format="dimension" />
+        <attr name="tabBackground" format="reference" />
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="textAllCaps" format="boolean" />
+    </declare-styleable>
+    
+    <!-- allenduan add at 20140113 -->
+    <declare-styleable name="PadaTabActionBar">
+        <!-- 中间显示的title -->
+        <attr name="tab_title" format="string" />
+         <!-- 是否显示title ,当为编辑模式时，显示title -->
+        <attr name="tab_showTitle" format="boolean" />
+        <!-- 是否显示logo -->
+        <attr name="tab_showLogo" format="boolean" />
+        <!-- logo title -->
+        <attr name="tab_logoTitle" format="string" />
+        <!-- 是否显示logo title  -->
+        <attr name="tab_showLogoTitle" format="boolean"/>
+        <!-- logo icon -->
+        <attr name="tab_logoIcon" format="reference" />
+        <attr name="tab_rightEditIcon" format="reference" />
+        <!-- 是否显示 Tab 默认显示-->
+        <attr name="tab_showTabStrip" format="boolean"/>
+        <!-- 是否显示搜索按钮，默认不显示 -->
+        <attr name="tab_showSearch" format="boolean" />
+        <!-- 是否编辑，默认不显示 -->
+        <attr name="tab_showRightEdit" format="boolean" />
+        <!-- 左边是否编辑，默认不显示 -->
+        <attr name="tab_showLeftEdit" format="boolean" />
+        <!-- 左边是否显示返回键，默认不显示 -->
+        <attr name="tab_showReturn" format="boolean" />
+        
+    </declare-styleable>
+    
+    <declare-styleable name="PadaFooterBar">
+        <attr name="num" format="integer"/>
+        <attr name="background" format="reference"/>
+        <attr name="btn1_background" format="reference"/>
+        <attr name="btn2_background" format="reference"/>
+        <attr name="btn3_background" format="reference"/>
+        <attr name="btn4_background" format="reference"/>
+        <attr name="btn1_string" format="string"/>
+        <attr name="btn2_string" format="string"/>
+        <attr name="btn3_string" format="string"/>
+        <attr name="btn4_string" format="string"/>
+        
+    </declare-styleable>
+ 
+    <!-- 自定义动画button -->
+    <declare-styleable name="PadaKeyButtonView">
+        <!-- key code to send when pressed; if absent or 0, no key is sent -->
+        <attr name="keyCode" format="integer" />
+        <!-- does this button generate longpress / repeat events? -->
+        <attr name="keyRepeat" format="boolean" />
+        <!-- drawable to use for a swelling, glowing background on press -->
+        <attr name="glowBackground" format="reference" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="PadaHeaderBar">
+        <attr name="left_title" format="string"/>
+        <attr name="right_title" format="string"/>
+        <attr name="header_title" format="string"/>
+        <attr name="headerbar_background" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="PadaWheeView">
+        <attr name="pl_currentItemSize" format="dimension" />
+        <attr name="pl_labelSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+    <com.berry.sortapp.views.SearchEditText
+        android:id="@+id/search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/search_bar_bg"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="@string/search_hint"
+        android:singleLine="true" />
+    
+	<com.berry.sortapp.views.SlidingTab 
+	    android:id="@+id/search_layout_tab"
+	    android:layout_below="@id/search_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    />
+	<TextView
+   		android:id="@+id/search_layout_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/search_layout_tab"
+        android:background="#DDDDDD" />
+   
+    <android.support.v4.view.ViewPager
+        android:id="@+id/search_paper"
+        android:layout_below="@id/search_layout_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+    
+    <include 
+        android:id="@+id/search_layout_result"
+       layout="@layout/layout_search_result"
+       android:visibility="gone"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/search_edit" />
+    
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">全部应用</string>
+	<string name="search_hint">应用、网页</string>
+	
+	<string name="tab_1">应用</string>
+    <string name="tab_2">内容</string>
+    <string name="tab_3">新闻</string>
+    
+	
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <item type="id" name="gridview_item_app"></item>
+    <item type="id" name="listview_item_app"></item>
+    <color name="gridview_item_bg_pressed">#E0E0E0</color>
+    
+    <bool name="channel_abroad">false</bool>
+    <string name="search_in_web_error">系统中没有浏览器</string>
+    <string name="search_in_gamecenter_error1">游戏中心版本太低，正在为您下载新版本游戏中心</string>
+    <string name="search_in_gamecenter_error2">您还未安装游戏中心，正在为您下载游戏中心</string>
+    
+    
+    <color name="search_selected_tab_color">#009688</color>
+    <color name="search_unselected_tab_color">#000000</color>
+    <color name="search_tab_divider_color">#00000000</color>
+</resources>

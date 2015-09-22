@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:background="#FFF"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="最近打开"/>
+        <GridView 
+            android:id="@+id/frag_2_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:listSelector="#00000000"
+            android:numColumns="4">
+            
+        </GridView>
+        <TextView 
+            android:id="@+id/frag_2_open_null"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="暂无最近打开任务"
+            android:visibility="gone"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="#FFF"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="指定应用内搜索"/>
+        <include 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            layout="@layout/layout_search_custom"/>
+    </LinearLayout>
+
+</LinearLayout>

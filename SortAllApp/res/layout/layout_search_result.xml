@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_search_result_custom"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="#FFF"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本地应用"
+            android:layout_marginBottom="5dp"
+            />
+        <ListView 
+            android:id="@+id/search_result_lv"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content">
+            
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

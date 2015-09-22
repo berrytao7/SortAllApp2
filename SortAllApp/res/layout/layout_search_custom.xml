@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:baselineAligned="false"
+    android:id="@+id/layout_custom_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/search_layout_broswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/gridview_item_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_broswer"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/jui_com_android_chrome" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_broswer"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="浏览器" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_layout_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/gridview_item_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_game"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/jui_com_pada_gamecenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_game"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="游戏中心" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_layout_appstore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/gridview_item_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_appstore"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/jui_com_pada_appstore" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_appstore"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="应用中心" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/gridview_item_bg"
+        android:gravity="center" />
+
+</LinearLayout>

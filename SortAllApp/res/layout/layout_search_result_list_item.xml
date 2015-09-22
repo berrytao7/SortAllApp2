@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:background="@drawable/gridview_item_bg"
+    >
+	<ImageView 
+	    android:id="@+id/search_result_lv_item_icon"
+	    android:layout_width="36dp"
+	    android:layout_height="36dp"
+	    android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+	    />
+    <TextView 
+        android:id="@+id/search_result_lv_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/search_result_lv_item_icon"
+        />
+
+</RelativeLayout>

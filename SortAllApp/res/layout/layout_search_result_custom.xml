@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    android:background="#FFF"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+	<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="在线网页、游戏、应用"
+            />
+    <RelativeLayout
+        android:id="@+id/search_result_item_broswer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/gridview_item_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/search_result_broswer_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jui_com_android_chrome" />
+
+        <TextView
+            android:id="@+id/search_result_broswer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/search_result_broswer_icon"
+            android:text="在浏览器中搜索" />
+    </RelativeLayout>
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD" />
+    <RelativeLayout
+        android:id="@+id/search_result_item_game"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/gridview_item_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/search_result_game_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jui_com_pada_gamecenter" />
+
+        <TextView
+            android:id="@+id/search_result_game_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/search_result_game_icon"
+            android:text="在游戏中心搜索" />
+    </RelativeLayout>
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD" />
+    <RelativeLayout
+        android:id="@+id/search_result_item_store"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="30dp"
+        android:background="@drawable/gridview_item_bg"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/search_result_store_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jui_com_pada_appstore" />
+
+        <TextView
+            android:id="@+id/search_result_store_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/search_result_store_icon"
+            android:text="在应用中心搜索" />
+    </RelativeLayout>
+
+</LinearLayout>
